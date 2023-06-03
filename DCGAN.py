@@ -76,7 +76,7 @@ class Discriminator(nn.Module):
             nn.Conv2d(hidden_dim_d,hidden_dim_d*2, 4, 1),
             nn.BatchNorm2d(hidden_dim_d*2),
             nn.LeakyReLU(0.2),
-            nn.Conv2d(hidden_dim_d*2,hidden_dim_d*4, 4, 2),
+            nn.Conv2d(hidden_dim_d*2,hidden_dim_d*4, 4, 1),
             nn.BatchNorm2d(hidden_dim_d*4),
             nn.LeakyReLU(0.2),
             nn.Conv2d(hidden_dim_d*4, 1,4, 1),
